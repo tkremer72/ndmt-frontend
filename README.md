@@ -1,27 +1,59 @@
-# NdmtFrontend
+# New Driver Mile Tracker Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+#	The goal of the New Driver Mile Tracker Application is to provide young, unlicensed drivers with a way to keep track of the supervised miles they drive by using manual entry, and geo tracking to log and calculate the number of hours they have driven.  
 
-## Development server
+#	The app should also provide a way to upload images of the odometer both before and after driving supervised miles.  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+#	In addition to keeping track of miles for the driver, the app should provide a way to verify that the young driver is registered to drive under supervision, provide a way for the supervising driver to upload an image of their license and show that they are legal guardians or legally authorized by the guardians to supervise their young driver.   Or the app should communicate through an API with the DMV to acquire these verifications.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#	Lastly the app should provide a way to print out all of the forms as well as a final summery for each new drivers’ hours driven, their legal information, and the supervising drivers signature, both digital and handwritten.  The end goal is to get the application to a place where all the above can be done through the application digitally. 
 
-## Build
+## App Needs & Requirements:
+	User Verification
+	Geo Tracker Mile Entry
+	Password Encryption
+	Display User Miles
+	Calculate Miles Driven
+	*Share User Miles
+  Store Images
+	Allow Digital Signature
+	User Registration Form
+	User Sign In Form
+	User Miles Driven Form
+	Ability To Print Out All Forms
+	Licensed Driver Confirmation & Verification
+	*Possibly Communicate Via API With DMV
+	Application Timer 
+	
+## As a user I need to:
+	Register
+	Log In
+	Manual Mile Entry
+	Upload Images
+  Odometer Image Before Driving
+	Odometer Image After Driving
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Databases & Storage:
 
-## Running unit tests
+#### Database 1:
+	User Id
+	First Name
+	Last Name
+	Address
+	Phone Number
+	Miles Driven
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Database 2:
+	User Id
+	Username
+	Miles Driven
+	Password
 
-## Running end-to-end tests
+#### Database 3:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+	User Id
+	Miles Driven
+	Uploaded Images
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
