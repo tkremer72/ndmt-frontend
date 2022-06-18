@@ -36,7 +36,7 @@
 
 ### Databases & Storage:
 
-#### Database 1:
+#### Users 1:
 	User Id
 	First Name
 	Last Name
@@ -44,16 +44,49 @@
 	Phone Number
 	Miles Driven
 
-#### Database 2:
+#### Info 2:
 	User Id
 	Username
-	Miles Driven
 	Password
 
-#### Database 3:
+#### Security 3:
 
 	User Id
-	Miles Driven
-	Uploaded Images
+	Password
+
+#### Images 4:
+	UserId
+	Image
+
+##### Bring Angular Material Into The Project
+  npm install --save @angular/material @angular/cdk @angular/animations
+  ng add @angular/material
+
+##### Add some components
+
+ng add component components/UserRegistration
+ng add component components/UserLogin
+ng add component components/UserProfile
+ng add component components/UserSummary
+
+##### Add some services
+
+ng generate service components/services/UserService
+ng generate service components/services/MileService
+ng generate service components/services/ImageService
+ng generate service components/services/AuthenticationService
+
+##### Add some interceptors
+
+ng generate interceptor components/interceptors/Auth
+ng generate interceptor components/interceptors/Error
+ng generate interceptor components/interceptors/Message
+
+##### Add some guards
+
+ng generate guard components/guards/Authorize
+ng generate guard components/guards/Message
+
+
 
 
