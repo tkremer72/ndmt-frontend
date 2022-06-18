@@ -87,6 +87,12 @@ ng generate interceptor components/interceptors/Message
 ng generate guard components/guards/Authorize
 ng generate guard components/guards/Message
 
+##### Add a couple modules
 
+ng g module components/modules/Material
+ng g module components/modules/Users
+
+# Install bootstrap
+npm install bootstrap --save
 
 
